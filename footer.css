@@ -1,0 +1,42 @@
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: radial-gradient(circle, #080d19, #1a2642);
+  width: 100%;
+  height: 100vh;
+  color: #2da2ec;
+}
+
+.topFooter {
+  height: 45%;
+  width: 75%;
+}
+
+.bottomFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5em;
+  border-top: solid 1px;
+  height: 15%;
+  width: 75%;
+}
+
+.bottomFooter a {
+  text-decoration: none;
+}
+
+.bottomFooter a:visited {
+  color: inherit;
+}
+
+.bottomFooter ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.bottomFooter li {
+  padding-right: 50px;
+}

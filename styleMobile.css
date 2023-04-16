@@ -1,0 +1,120 @@
+@media (max-width: 1300px) {
+  .introductionContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .introduction {
+    text-align: center;
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .picture {
+    height: 500px;
+    width: 434px;
+    margin: 0;
+  }
+
+  .picture img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  header a {
+    text-transform: uppercase;
+    letter-spacing: 0;
+    padding: 15px 10px;
+    position: relative;
+    font-size: 0.65em;
+  }
+  .background {
+    background-image: url("Sources/backgroundMobile.jpg");
+  }
+
+  .iconContainer {
+    height: 32vh;
+    width: 20%;
+    font-size: 1.4em;
+    color: #0339ad;
+  }
+
+  .vl {
+    border-left: 2px solid;
+  }
+
+  .introductionContainer {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  .introduction {
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+  }
+
+  .picture {
+    height: 340px;
+    width: 295px;
+    margin: 0;
+  }
+
+  .picture img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .topAboutMe {
+    font-size: 0.6rem;
+  }
+
+  .bottomAboutMe {
+    font-size: 0.6rem;
+  }
+
+  .myWorks {
+    font-size: 2rem;
+    margin: 40px 0;
+  }
+
+  .insideLeft {
+    margin: 0;
+  }
+
+  .insideLeft img {
+    width: 40%;
+  }
+
+  .insideRight {
+    margin: 0;
+  }
+
+  .insideRight img {
+    width: 40%;
+  }
+
+  .btnContainer {
+    margin-top: 40px;
+  }
+
+  .bottomFooter {
+    font-size: 1em;
+  }
+
+  #menu-bar {
+    width: 30px;
+    height: 20px;
+  }
+
+  .change-bg {
+    width: 400px;
+    height: 400px;
+  }
+
+  .nav {
+    font-size: 0.8rem;
+  }
+}

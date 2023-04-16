@@ -1,0 +1,90 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #201c29;
+  height: 100vh;
+  width: 100vw;
+  color: #497081;
+  font-family: "zilla slab", serif;
+}
+
+#app {
+  text-align: center;
+  background-color: whitesmoke;
+  min-width: 25%;
+  max-width: 25%;
+  min-height: 60vh;
+}
+
+.App {
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+  padding-right: 40px;
+}
+
+li {
+  word-wrap: break-word;
+}
+
+.deleteButton {
+  border: none;
+  background-color: whitesmoke;
+  color: red;
+  font-weight: 1000;
+}
+
+.tasksInput {
+  padding: 5px 20px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  margin-right: 5px;
+  width: 40%;
+}
+
+.tasksButton {
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  cursor: pointer;
+  background: black;
+  color: white;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 700;
+  transition: transform 200ms, background 200ms;
+}
+
+.tasksButton:hover {
+  transform: translateY(-2px);
+}
+
+.back-to-portfolio {
+  display: flex;
+  position: fixed;
+  left: 3%;
+  top: 50%;
+  height: 25vh;
+  width: 5%;
+  z-index: 20;
+  font-size: 5em;
+  color: white;
+  opacity: 20%;
+}
+
+.back-to-portfolio:hover {
+  opacity: 100%;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}

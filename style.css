@@ -1,0 +1,322 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+body {
+  background: #282828;
+  color: #1d4cb0;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.iconContainer {
+  display: flex;
+  position: fixed;
+  right: 1%;
+  bottom: 5%;
+  height: 25vh;
+  width: 5%;
+  z-index: 10;
+  font-size: 2em;
+  color: #0339ad;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.iconContainer ul {
+  list-style-type: none;
+}
+
+.iconContainer li {
+  margin-top: 20px;
+}
+
+.vl {
+  border-left: 3px solid;
+  height: 100px;
+  position: relative;
+  left: 50%;
+}
+
+.background {
+  position: fixed;
+  background-image: url("Sources/background.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -5;
+  top: 0;
+}
+
+.firstSection {
+  width: 100%;
+  height: 100vh;
+  color: #080d19;
+}
+
+.introductionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 95%;
+}
+.introduction {
+  font-size: 2.3em;
+  margin: 0 5% 0 30%;
+  color: #0e1933;
+}
+
+.introduction p {
+  margin: 5px;
+  font-size: 1.5em;
+}
+
+.picture {
+  background: #1d4cb0;
+  margin-right: 25%;
+  border-radius: 2%;
+}
+
+.picture img {
+  display: block;
+  height: 500px;
+  width: 434px;
+  opacity: 80%;
+  transition: all 0.5s ease;
+  border-radius: 2%;
+}
+
+.picture img:hover {
+  opacity: 100%;
+}
+
+.secondSection {
+  display: flex;
+  background: radial-gradient(circle, #080d19, #1a2642);
+  height: 100vh;
+  width: 100%;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.topAboutMe {
+  display: flex;
+  height: 40%;
+  width: 90%;
+  margin: 5% 5% 0 5%;
+}
+
+.about {
+  height: 100%;
+  width: 50%;
+  font-size: 1.8em;
+}
+
+.bottomAboutMe {
+  display: flex;
+  flex-direction: row-reverse;
+  height: 40%;
+  width: 90%;
+  margin: 0 5% 5% 5%;
+}
+
+.skills {
+  height: 100%;
+  width: 50%;
+}
+
+.skills span {
+  font-size: 2em;
+}
+
+.skills ul {
+  margin-top: 40px;
+  margin-left: -20px;
+}
+
+.skills ul li {
+  list-style-type: square;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.thirdSection {
+  display: flex;
+  flex-direction: column;
+  background: transparent;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 5%;
+}
+
+.thirdSection img {
+  border: solid black 5px;
+  width: 40vh;
+  filter: grayscale(100%);
+  transition: all 1s ease;
+}
+
+.thirdSection img:hover {
+  filter: grayscale(0%);
+  transform: translateY(-15px);
+  transition: all 1s ease;
+  cursor: pointer;
+}
+
+.thirdSection a {
+  text-decoration: none;
+}
+
+.thirdSection a:visited {
+  color: inherit;
+}
+
+.myWorks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10%;
+  width: 100%;
+  margin-bottom: 2%;
+  color: #080d19;
+  font-size: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.worksLeft {
+  display: flex;
+  height: 20%;
+  width: 100%;
+}
+
+.worksLeftHide {
+  display: none;
+  height: 20%;
+  width: 100%;
+}
+
+.insideLeft {
+  display: flex;
+  margin-left: 7%;
+}
+
+.insideLeft a {
+  display: flex;
+}
+
+.leftText {
+  display: flex;
+  align-self: center;
+  background: #080d19;
+  height: 70%;
+  width: 40vh;
+  z-index: 3;
+  position: relative;
+  left: -10%;
+  font-size: 1.5em;
+  text-align: center;
+  text-justify: inter-character;
+  padding-top: 2%;
+}
+
+.worksRight {
+  display: flex;
+  justify-content: end;
+  height: 20%;
+  width: 100%;
+}
+
+.worksRightHide {
+  display: none;
+  justify-content: end;
+  height: 20%;
+  width: 100%;
+}
+
+.insideRight {
+  display: flex;
+  margin-right: 7%;
+}
+
+.rightText {
+  display: flex;
+  align-self: center;
+  background: #080d19;
+  height: 70%;
+  width: 40vh;
+  z-index: 3;
+  position: relative;
+  right: -10%;
+  font-size: 1.5em;
+  text-align: center;
+  text-justify: inter-character;
+  padding-top: 2%;
+}
+
+.insideRight a {
+  display: flex;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+}
+
+.btnContainer button {
+  cursor: pointer;
+  background: #080d19;
+  font-size: 1.1em;
+  color: #1d4cb0;
+  height: 60px;
+  width: 160px;
+}
+
+.btnContainer button:hover {
+  background: #162342;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@media only screen and (max-height: 840px) {
+  .rightText {
+    font-size: 0.8em;
+  }
+
+  .leftText {
+    font-size: 0.8em;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  .introduction {
+    margin-left: 25%;
+  }
+}

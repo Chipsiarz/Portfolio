@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="public.js" defer></script>
+  </head>
+  <body>
+    <div class="back-to-portfolio">
+      <a href="../../index.html" class="link"
+        ><i class="bi bi-arrow-left-square"></i
+      ></a>
+    </div>
+    <div class="video-bg">
+      <video width="320" height="240" autoplay="" loop="" muted="">
+        <source src="Sources/background.mp4" type="video/mp4" />
+      </video>
+    </div>
+    <div class="container">
+      <form
+        action="http://localhost:8080/"
+        enctype="multipart/form-data"
+        method="post"
+      >
+        <div class="chooseFile">
+          <input
+            type="file"
+            class="imageInput"
+            accept="image/jpeg"
+            name="file"
+            id="jpegInput"
+          />
+          <label for="jpegInput"
+            >Jpeg
+            <p id="jpegName"></p>
+          </label>
+        </div>
+        <div class="convertBtm">
+          <input
+            type="image"
+            src="Sources/submitIcon.png"
+            style="height: 20%; width: 100%"
+          />
+        </div>
+        <div class="chooseFile">
+          <input
+            type="file"
+            class="imageInput"
+            accept="image/png"
+            name="file"
+            id="pngInput"
+          />
+          <label for="pngInput"
+            >Png
+            <p id="pngName"></p>
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Todo</title>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="back-to-portfolio">
+      <a href="../../index.html" class="link"
+        ><i class="bi bi-arrow-left-square"></i
+      ></a>
+    </div>
+    <div id="app"></div>
+
+    <script type="text/babel">
+      const { useState } = React;
+
+      function App() {
+        const [newTask, setNewTask] = useState("");
+        const [tasks, setTasks] = useState([]);
+
+        const addTask = () => {
+          if (!newTask) {
+            alert("You need to enter a task.");
+            return;
+          }
+
+          const task = {
+            key: Math.floor(Math.random() * 10000),
+            value: newTask,
+          };
+
+          setTasks((prev) => [...prev, task]);
+          setNewTask("");
+        };
+
+        const enterTask = () => {
+          if (event.key === "Enter") {
+            if (!newTask) {
+              alert("You need to enter a task.");
+              return;
+            }
+
+            const task = {
+              key: Math.floor(Math.random() * 10000),
+              value: newTask,
+            };
+
+            setTasks((prev) => [...prev, task]);
+            setNewTask("");
+          }
+        };
+
+        const deleteTask = (key) => {
+          const tasksArr = tasks.filter((task) => task.key !== key);
+          setTasks(tasksArr);
+        };
+
+        return (
+          <div className="App">
+            <h1>Todo List</h1>
+            <input
+              className="tasksInput"
+              type="text"
+              placeholder="Add task"
+              value={newTask}
+              onChange={(e) => setNewTask(e.target.value)}
+              onKeyPress={() => enterTask()}
+            ></input>
+            <button className="tasksButton" onClick={() => addTask()}>
+              Add
+            </button>
+            <ul>
+              {tasks.map((task) => {
+                return (
+                  <li key={task.key}>
+                    {task.value}{" "}
+                    <button
+                      className="deleteButton"
+                      onClick={() => deleteTask(task.key)}
+                    >
+                      X
+                    </button>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("app"));
+    </script>
+  </body>
+</html>

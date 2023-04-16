@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="styleMobile.css">
+  </head>
+  <body>
+    <header id="navbar">
+      <div id="menu">
+        <div id="menu-bar" onclick="menuOnClick()">
+          <div id="bar1" class="bar"></div>
+          <div id="bar2" class="bar"></div>
+          <div id="bar3" class="bar"></div>
+        </div>
+
+        <nav class="nav" id="nav">
+          <ul>
+            <li><a href="#firstSection">Home</a></li>
+            <li><a href="#secondSection">About Me</a></li>
+            <li><a href="#thirdSection">Works</a></li>
+            <li><a href="#footer">Contact</a></li>
+            <li><a href="Sources/Kamil Machnik.pdf" download>Download CV</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="menu-bg" id="menu-bg"></div>
+
+      <a href="#firstSection" class="navbarA">
+        <i class="navbarNumber">1.</i>
+        Home
+      </a>
+
+      <a href="#secondSection" class="navbarA">
+        <i class="navbarNumber">2.</i>
+        About Me
+      </a>
+
+      <a href="#thirdSection" class="navbarA">
+        <i class="navbarNumber">3.</i>
+        Works
+      </a>
+
+      <a href="#footer" class="navbarA">
+        <i class="navbarNumber">4.</i>
+        Contact
+      </a>
+    </header>
+
+    <main>
+      <div class="iconContainer">
+        <ul>
+          <li>
+            <a href="https://github.com/Chipsiarz" class="link"><i class="bi bi-github"></i></a>
+          </li>
+          <li>
+            <a href="mailto:Kamil.Machnik97@gmail.com" class="link"><i class="bi bi-envelope-fill"></i></a>
+          </li>
+          <li>
+            <div class="vl"></div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="background"></div>
+
+      <section class="firstSection" id="firstSection">
+        <div class="introductionContainer">
+          <div class="introduction">
+            <h1>
+              <span>Kamil Machnik</span>
+               <p>Frontend</p>
+               <p>Developer</p>
+            </h1>
+          </div>
+          <div class="picture"><img src="Sources/Photo.png" /></div>
+        </div>
+        </div>
+      </section>
+
+      <section class="secondSection" id="secondSection">
+        <div class="aboutMe reveal">
+          <div class="topAboutMe">
+            <div class="about"><h2>About me</h2>
+              I like to create websites and programs, and look at the final effects of my work.
+              I am currently looking for an opportunity to learn new and develop old skills in
+              Frontend.
+            </div>
+          </div>
+          <div class="bottomAboutMe">
+            <div class="skills"><span>Here are a few technologies I've been working with:</span>
+              <ul>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>React.js</li>
+                <li>Node.js</li>
+                <li>Git</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="thirdSection reveal" id="thirdSection">
+        <div class="myWorks">Some of my works</div>
+        <div class="worksLeft">
+          <div class="insideLeft">
+            <a href="Pages/Virtual-keyboard/index.html">
+              <img src="Sources/virtualKeyboard.jpg" alt="">
+              <div class="leftText">
+                Virtual keyboard, highlighting the pressed keys and responding to CapsLock and Shift
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="worksRight">
+          <div class="insideRight">
+            <a href="Pages/Landing-page/index.html">
+              <div class="rightText">
+                An example landing page created with HTML, css and JavaScript.
+              </div>
+              <img src="Sources/landingPage.jpg" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="worksLeft">
+          <div class="insideLeft">
+            <a href="Pages/TodoList/react.html">
+              <img src="Sources/TodoList.jpg" alt="">
+              <div class="leftText">
+                Simple TodoList made with react.js.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="worksRight">
+          <div class="insideRight">
+            <a href="Pages/Converter/index.html">
+              <div class="rightText">
+                Photo converter with the ability to convert jpg to png and vice versa. Created with node.js.
+              </div>
+              <img src="Sources/imgConverter.jpg" alt="">            
+            </a>
+          </div>
+        </div>
+        <div class="worksLeftHide" style="display: none;">
+          <div class="insideLeft">
+            <a href="Pages/Weather-app/index.html">
+              <img src="Sources/weatherApp.png" alt="">
+              <div class="leftText">
+                An application showing the current weather and temperature of the selected city.
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="btnContainer"><button onclick="showMore()" id="showBtn">Show More</button></div>
+      </section>
+      <footer id="footer">
+        <div class="topFooter"></div>
+        <div class="bottomFooter">
+          <span>© Kamil Machnik 2023</span>
+          <ul>
+            <a href="https://github.com/Chipsiarz" class="link"><li>GH  <i class="bi bi-github"></i></li></a>
+            <a href="mailto:Kamil.Machnik97@gmail.com" class="link"><li>GM  <i class="bi bi-envelope-fill"></i></li></a>
+          </ul>
+        </div>
+      </footer>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
