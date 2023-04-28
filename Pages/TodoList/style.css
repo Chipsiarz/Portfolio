@@ -31,6 +31,10 @@ ul {
 
 li {
   word-wrap: break-word;
+  width: 100%;
+  font-size: 1.2em;
+  margin: 6px 0;
+  user-select: none;
 }
 
 .deleteButton {
@@ -87,4 +91,9 @@ li {
 .link {
   color: inherit;
   text-decoration: none;
+}
+
+.done {
+  color: red;
+  text-decoration: line-through;
 }

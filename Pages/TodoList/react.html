@@ -63,6 +63,10 @@
           setTasks(tasksArr);
         };
 
+        const taskDone = () => {
+          event.target.classList.toggle("done");
+        };
+
         return (
           <div className="App">
             <h1>Todo List</h1>
@@ -80,7 +84,7 @@
             <ul>
               {tasks.map((task) => {
                 return (
-                  <li key={task.key}>
+                  <li key={task.key} onClick={() => taskDone()}>
                     {task.value}{" "}
                     <button
                       className="deleteButton"
