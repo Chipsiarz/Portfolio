@@ -2,6 +2,13 @@ const menuBar = document.getElementById("menu-bar");
 const nav = document.getElementById("nav");
 const menuBg = document.getElementById("menu-bg");
 
+const JSText = document.getElementById("JSText");
+const HTMLText = document.getElementById("HTMLText");
+const CSSText = document.getElementById("CSSText");
+const ReactText = document.getElementById("ReactText");
+const NodeText = document.getElementById("NodeText");
+const GitText = document.getElementById("GitText");
+
 let prevScrollpos = window.pageYOffset;
 
 function menuOnClick() {
@@ -73,3 +80,9 @@ function showMore() {
     }
   }
 }
+
+const changeDisplay = (displayDiv) => {
+  skillsTextContainer = document.querySelectorAll(".skillsTextContainer");
+  skillsTextContainer.forEach((a) => (a.style.display = "none"));
+  displayDiv.style.display = "flex";
+};

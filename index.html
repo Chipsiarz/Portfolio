@@ -96,14 +96,40 @@
           </div>
           <div class="bottomAboutMe">
             <div class="skills"><span>Here are a few technologies I've been working with:</span>
-              <ul>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React.js</li>
-                <li>Node.js</li>
-                <li>Git</li>
-              </ul>
+              <div class="skillsContainer">
+                <div class="skillsBtns">
+                  <button  onclick="changeDisplay(JSText)">JavaScript</button>
+                  <button  onclick="changeDisplay(HTMLText)">HTML</button>
+                  <button onclick="changeDisplay(CSSText)">CSS</button>
+                  <button onclick="changeDisplay(ReactText)">React.js</button>
+                  <button onclick="changeDisplay(NodeText)">Node.js</button>
+                  <button onclick="changeDisplay(GitText)">Git</button>
+                </div>
+                <div id="JSText" class="skillsTextContainer">
+                  <div class="skillLevel">JavaScript</div>
+                  <div class="skillText">JavaScript</div>
+                </div>
+                <div id="HTMLText" class="skillsTextContainer" style="display: none;">
+                  <div class="skillLevel">HTML</div>
+                  <div class="skillText">HTML</div>
+                </div>
+                <div id="CSSText" class="skillsTextContainer" style="display: none;">
+                  <div class="skillLevel">CSS</div>
+                  <div class="skillText">CSS</div>
+                </div>
+                <div id="ReactText" class="skillsTextContainer" style="display: none;">
+                  <div class="skillLevel">React.js</div>
+                  <div class="skillText">React.js</div>
+                </div>
+                <div id="NodeText" class="skillsTextContainer" style="display: none;">
+                  <div class="skillLevel">Node.js</div>
+                  <div class="skillText">Node.js</div>
+                </div>
+                <div id="GitText" class="skillsTextContainer" style="display: none;">
+                  <div class="skillLevel">Git</div>
+                  <div class="skillText">Git</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
