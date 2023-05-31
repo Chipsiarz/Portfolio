@@ -136,6 +136,7 @@ body {
 
 .about {
   height: 100%;
+  width: 50%;
   font-size: 1.8em;
 }
 
@@ -149,6 +150,7 @@ body {
 
 .skills {
   height: 100%;
+  width: 50%;
 }
 
 .skills span {
