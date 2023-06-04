@@ -68,10 +68,10 @@ label p {
 }
 
 .chooseFile {
+  display: flex;
   height: 70%;
   width: 35%;
   margin: 15px;
-  display: flex;
 }
 
 .chooseFile input {
@@ -122,4 +122,23 @@ button {
 .link {
   color: inherit;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 98%;
+  }
+
+  .chooseFile {
+    margin: 5px;
+    height: 40%;
+  }
+
+  label p {
+    font-size: 0.1em;
+  }
+
+  .back-to-portfolio {
+    top: 15%;
+  }
 }
