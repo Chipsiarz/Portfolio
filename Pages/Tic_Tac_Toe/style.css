@@ -1,0 +1,119 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+
+body {
+  background-color: #13293d;
+  margin: 0;
+  font-family: "Comic Sans MS";
+}
+
+main {
+  margin-top: 3%;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+.playerScore {
+  background-color: black;
+  color: white;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 1%;
+}
+
+#gameResult {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 220px;
+  border-radius: 20px;
+  font-size: 1.5em;
+}
+
+#xWins span {
+  color: #1b98e0;
+  font-size: 1.5em;
+}
+
+#oWins span {
+  color: rgb(224, 18, 18);
+  font-size: 1.5em;
+}
+
+table {
+  background-color: black;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+td {
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  vertical-align: middle;
+  border: 3px solid white;
+}
+
+.x {
+  color: blue;
+  font-size: 4em;
+}
+
+.o {
+  color: red;
+  font-size: 4em;
+}
+
+.win {
+  background-color: #1b98e0;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.back-to-portfolio {
+  display: flex;
+  position: fixed;
+  left: 3%;
+  top: 50%;
+  height: 25vh;
+  width: 5%;
+  z-index: 20;
+  font-size: 5em;
+  color: white;
+  opacity: 20%;
+}
+
+.back-to-portfolio:hover {
+  opacity: 100%;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+#resetContainer {
+  margin-top: 3%;
+  text-align: center;
+}
+
+#resetBtn {
+  background-color: #247ba0;
+  color: white;
+
+  padding: 10px 20px;
+  font-size: 1.6em;
+}

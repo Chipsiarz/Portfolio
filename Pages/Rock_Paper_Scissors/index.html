@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="back-to-portfolio">
+      <a href="../../index.html" class="link"
+        ><i class="bi bi-arrow-left-square"></i
+      ></a>
+    </div>
+    <div class="resultDiv">
+      <div class="scoreDiv">
+        <h2 class="playerColor">
+          Player Wins:<span id="playerScore"> 0</span>
+        </h2>
+        <h2 class="computerColor">
+          Computer Wins:<span id="computerScore"> 0</span>
+        </h2>
+        <h2>Draws:<span id="draws"> 0</span></h2>
+      </div>
+
+      <h2 class="resultText playerColor" id="playerChoice">Player Choice</h2>
+      <h2 class="resultText computerColor" id="computerChoice">
+        Computer Choice
+      </h2>
+      <h2 class="resultText" id="gameResult">Game Result</h2>
+
+      <button class="choiceBtn" id="rock">Rock</button>
+      <button class="choiceBtn" id="paper">Paper</button>
+      <button class="choiceBtn" id="scissors">Scissors</button>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
