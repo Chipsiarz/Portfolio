@@ -176,7 +176,8 @@ body {
   border: none;
   margin-top: 20px;
   margin-left: -20px;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: 600;
   cursor: pointer;
   padding: 8px 0px;
   transition: all 0.5s ease-out;
