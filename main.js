@@ -8,6 +8,7 @@ const CSSText = document.getElementById("CSSText");
 const ReactText = document.getElementById("ReactText");
 const NodeText = document.getElementById("NodeText");
 const GitText = document.getElementById("GitText");
+const BootstrapText = document.getElementById("BootstrapText");
 
 let prevScrollpos = window.pageYOffset;
 

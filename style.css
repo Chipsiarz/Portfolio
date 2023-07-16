@@ -178,7 +178,7 @@ body {
   margin-left: -20px;
   font-size: 1.2em;
   cursor: pointer;
-  padding: 10px 0px;
+  padding: 8px 0px;
   transition: all 0.5s ease-out;
 }
 .skillsBtns button:hover {
@@ -375,6 +375,23 @@ body {
 }
 
 @media only screen and (max-height: 840px) {
+  .secondSection {
+    font-size: 0.7em;
+  }
+
+  .aboutMe {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .skills {
+    width: 100%;
+  }
+
   .rightText {
     font-size: 0.8em;
   }
