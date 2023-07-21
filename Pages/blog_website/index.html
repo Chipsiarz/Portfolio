@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Website</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+  </head>
+  <body>
+    <!--Back to portfolio-->
+    <div class="back-to-portfolio">
+      <a href="../../index.html" class="link"
+        ><i class="bi bi-arrow-left-square"></i
+      ></a>
+    </div>
+    <!---Header Section-->
+    <nav class="navbar navbar-expand-lg main-bg">
+      <div class="container-fluid px-5">
+        <a class="navbar-brand main-color" href="./index.html">Blog</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link main-color"
+                aria-current="page"
+                href="./detail.html"
+                >Link</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-color" href="./detail.html">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-color" href="./detail.html">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link main-color" href="./detail.html">Link</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control border-0 rounded-0 secondary-bg main-color"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-main rounded-0 btn-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <!--Hero Section-->
+    <section class="secondary-bg main-color py-4">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="hero-post shadow h-100">
+              <img class="img-fluid" src="src/img/Blog_Img1.jpg" alt="" />
+              <div class="hero-post-badges text-center">
+                <a class="main-bg main-color p-2 px-3 mb-2" href="#"
+                  ><i class="fa fa-calendar-o aria-hidden=true"></i>17 July
+                  2023</a
+                >
+                <a class="main-bg main-color p-2 px-3" href="#">Travels</a>
+              </div>
+              <div class="hero-post-content">
+                <div class="row">
+                  <div class="col-md-2">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="src/img/Blog_Person.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-md-10">
+                    <h2>My blog post...</h2>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="hero-post mb-3 shadow">
+              <img class="img-fluid" src="src/img/Blog_Img2.jpg" alt="" />
+              <div class="hero-post-badges text-center">
+                <a class="main-bg main-color p-2 px-3 mb-2" href="#"
+                  ><i class="fa fa-calendar-o aria-hidden=true"></i>17 July
+                  2023</a
+                >
+                <a class="main-bg main-color p-2 px-3" href="#">Travels</a>
+              </div>
+              <div class="hero-post-content">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="src/img/Blog_Person.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-9">
+                    <h3>My blog post...</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-post shadow">
+              <img class="img-fluid" src="src/img/Blog_Img3.jpg" alt="" />
+              <div class="hero-post-badges text-center">
+                <a class="main-bg main-color p-2 px-3 mb-2" href="#"
+                  ><i class="fa fa-calendar-o aria-hidden=true"></i>17 July
+                  2023</a
+                >
+                <a class="main-bg main-color p-2 px-3" href="#">Travels</a>
+              </div>
+              <div class="hero-post-content">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img
+                      class="img-fluid rounded-circle"
+                      src="src/img/Blog_Person.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="col-sm-9">
+                    <h3>My blog post...</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Blog Section-->
+    <section class="main-bg secondary-color py-4">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-md-8">
+            <article class="blog-post secondary-bg mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="src/img/Blog_Img5.jpg" alt="" />
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">My blog post title</h3>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos eveniet, vero voluptatum laborum harum neque
+                    totam amet labore officia accusamus praesentium rerum
+                    aliquid! Cumque minus nobis libero sunt, sint voluptates.
+                    lore
+                  </p>
+                  <div class="badge">
+                    <a class="third-bg third-color" href="#">Technology</a>
+                    <a class="third-bg third-color" href="#">Programing</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post secondary-bg mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="src/img/Blog_Img5.jpg" alt="" />
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">My blog post title</h3>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos eveniet, vero voluptatum laborum harum neque
+                    totam amet labore officia accusamus praesentium rerum
+                    aliquid! Cumque minus nobis libero sunt, sint voluptates.
+                    lore
+                  </p>
+                  <div class="badge">
+                    <a class="third-bg third-color" href="#">Technology</a>
+                    <a class="third-bg third-color" href="#">Programing</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post secondary-bg mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="src/img/Blog_Img5.jpg" alt="" />
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">My blog post title</h3>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos eveniet, vero voluptatum laborum harum neque
+                    totam amet labore officia accusamus praesentium rerum
+                    aliquid! Cumque minus nobis libero sunt, sint voluptates.
+                    lore
+                  </p>
+                  <div class="badge">
+                    <a class="third-bg third-color" href="#">Technology</a>
+                    <a class="third-bg third-color" href="#">Programing</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post secondary-bg mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="src/img/Blog_Img5.jpg" alt="" />
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">My blog post title</h3>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos eveniet, vero voluptatum laborum harum neque
+                    totam amet labore officia accusamus praesentium rerum
+                    aliquid! Cumque minus nobis libero sunt, sint voluptates.
+                    lore
+                  </p>
+                  <div class="badge">
+                    <a class="third-bg third-color" href="#">Technology</a>
+                    <a class="third-bg third-color" href="#">Programing</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post secondary-bg mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="src/img/Blog_Img5.jpg" alt="" />
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">My blog post title</h3>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos eveniet, vero voluptatum laborum harum neque
+                    totam amet labore officia accusamus praesentium rerum
+                    aliquid! Cumque minus nobis libero sunt, sint voluptates.
+                    lore
+                  </p>
+                  <div class="badge">
+                    <a class="third-bg third-color" href="#">Technology</a>
+                    <a class="third-bg third-color" href="#">Programing</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+            <article class="blog-post secondary-bg mb-3 shadow">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img class="img-fluid" src="src/img/Blog_Img5.jpg" alt="" />
+                </div>
+                <div class="col-sm-8">
+                  <h3 class="m-0 mt-2">My blog post title</h3>
+                  <p class="m-0">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos eveniet, vero voluptatum laborum harum neque
+                    totam amet labore officia accusamus praesentium rerum
+                    aliquid! Cumque minus nobis libero sunt, sint voluptates.
+                    lore
+                  </p>
+                  <div class="badge">
+                    <a class="third-bg third-color" href="#">Technology</a>
+                    <a class="third-bg third-color" href="#">Programing</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+          <aside class="col-md-4 px-4">
+            <div class="social-links third-bg row text-center">
+              <div class="col-sm-4 py-5">
+                <a class="social-link w-100" href=""
+                  ><i
+                    class="fa fa-facebook-official third-color"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+              <div class="col-sm-4 py-5 secondary-bg">
+                <a class="social-link w-100" href=""
+                  ><i class="fa fa-twitter main-color" aria-hidden="true"></i
+                ></a>
+              </div>
+              <div class="col-sm-4 py-5">
+                <a class="social-link w-100" href=""
+                  ><i
+                    class="fa fa-youtube-play third-color"
+                    aria-hidden="true"
+                  ></i
+                ></a>
+              </div>
+            </div>
+            <h4 class="aside-heading mt-4 mb-3">Popular Authors</h4>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="src/img/Dziwny_pan.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">András Arato</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="author-social-links">
+                  <a href="#"
+                    ><i
+                      class="fa fa-facebook-official main-color"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-twitter main-color" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i
+                      class="fa fa-youtube-play main-color"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="src/img/Giga.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Ernest Khalimov</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="author-social-links">
+                  <a href="#"
+                    ><i
+                      class="fa fa-facebook-official main-color"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-twitter main-color" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i
+                      class="fa fa-youtube-play main-color"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="src/img/Kuf_Drahrepus.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Kuf Drahrepus</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="author-social-links">
+                  <a href="#"
+                    ><i
+                      class="fa fa-facebook-official main-color"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-twitter main-color" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i
+                      class="fa fa-youtube-play main-color"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <article class="row author mb-3">
+              <div class="col-sm-4">
+                <img
+                  class="img-fluid rounded-circle"
+                  src="src/img/Walter_White.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="col-sm-8">
+                <h5 class="m-0">Walter White</h5>
+                <p class="m-0">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <div class="author-social-links">
+                  <a href="#"
+                    ><i
+                      class="fa fa-facebook-official main-color"
+                      aria-hidden="true"
+                    ></i>
+                  </a>
+                  <a href="#">
+                    <i class="fa fa-twitter main-color" aria-hidden="true"></i>
+                  </a>
+                  <a href="#">
+                    <i
+                      class="fa fa-youtube-play main-color"
+                      aria-hidden="true"
+                    ></i
+                  ></a>
+                </div>
+              </div>
+            </article>
+            <h4 class="aside-heading mt-4 mb-3">Popular Cathegories</h4>
+            <div class="badges w-100">
+              <a class="third-bg third-color" href="#">Technology</a>
+              <a class="third-bg third-color" href="#">Programming</a>
+              <a class="third-bg third-color" href="#">HTML</a>
+              <a class="third-bg third-color" href="#">CSS</a>
+              <a class="third-bg third-color" href="#">Java</a>
+              <a class="third-bg third-color" href="#">Bootstrap</a>
+              <a class="third-bg third-color" href="#">React.js</a>
+              <a class="third-bg third-color" href="#">Node.js</a>
+              <a class="third-bg third-color" href="#">Python</a>
+              <a class="third-bg third-color" href="#">PHP</a>
+              <a class="third-bg third-color" href="#">Symfony</a>
+              <a class="third-bg third-color" href="#">Typescript</a>
+              <a class="third-bg third-color" href="#">Some stuff</a>
+              <a class="third-bg third-color" href="#">Vue.js</a>
+              <a class="third-bg third-color" href="#">Blog Posts Cathegory</a>
+              <a class="third-bg third-color" href="#">Angular</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!--Footer Section-->
+    <footer class="secondary-bg secondary-color py-4">
+      <div class="container-fluid px-5">
+        <div class="row">
+          <div class="col-md-4">
+            <a class="footer-logo main-color" href="#">Blog</a>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+              architecto, illo excepturi odit minima possimus a totam assumenda
+              laboriosam recusandae molestiae
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h4>Usefull Links</h4>
+            <ul>
+              <li><a class="main-color" href="#">Home</a></li>
+              <li><a class="main-color" href="#">Terms of Service</a></li>
+              <li><a class="main-color" href="#">Privacy Policy</a></li>
+              <li><a class="main-color" href="#">Contact Us</a></li>
+              <li><a class="main-color" href="#">Newsletter</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h4>Newsletter</h4>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control border-0 rounded-0 main-bg main-color"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-main rounded-0 btn-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+        <div class="w-100 text-center credits">© Kamil Machnik 2023</div>
+      </div>
+    </footer>
+  </body>
+</html>
